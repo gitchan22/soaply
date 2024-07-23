@@ -8,7 +8,7 @@ const getData = async () => {
       return res.json();
     })
     .then((data) => {
-      // console.log(data);
+      console.log(data);
       let dataElement;
 
       data.map((item) => {
@@ -23,7 +23,7 @@ const getData = async () => {
               <p>
                 ${item.pro_desc}
               </p>
-              <a href="#" class="common-btn">자세히 보기</a>
+              <a href="details.html?idx=${item.pro_idx}" class="common-btn">자세히 보기</a>
             </div
           </div>
         `;
